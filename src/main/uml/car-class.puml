@@ -1,0 +1,51 @@
+@startuml
+
+abstract Car{
+    Driver driver
+
+    {abstract} driving()
+    outDriver()
+    inToDriver()
+    detailDriver()
+}
+
+Class Sonata{
+    Driver driver
+
+    driving()
+    outDriver()
+    inToDriver()
+    detailDriver()
+}
+
+Class Ferrari{
+    Driver driver
+
+    driving()
+    outDriver()
+    inToDriver()
+    detailDriver()
+}
+
+
+class Driver{
+    String name
+    Gender gender
+    getName()
+    getGender()
+    setName()
+    setGender()
+}
+
+Enum Gender{
+    MAN,WOMAN
+}
+
+Car *- Driver
+Driver *-- Gender
+
+Car <|-- Sonata
+Car <|-- Ferrari
+
+
+@enduml
