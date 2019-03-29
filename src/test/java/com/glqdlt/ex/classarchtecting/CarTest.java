@@ -12,10 +12,17 @@ import static org.junit.Assert.*;
 public class CarTest {
 
     @Test
-    public void sonata() {
+    public void ferrari() {
         Driver simpleMan = new Driver("simple", Gender.MAN);
-        Car sonata = new Sonata();
+        Car sonata = new Ferrari();
         sonata.inToDriver(simpleMan);
-        Assert.assertEquals("탈탈탈탈...", sonata.driving());
+        Assert.assertEquals("뿌웨에에에에엥~~~@@@@", sonata.driving());
+    }
+
+    @Test
+    public void carEvent() {
+        CarEventStep carEventStep = new CarEventStep();
+        CarEvent carEvent = new CarEvent(carEventStep);
+        carEvent.run();
     }
 }
