@@ -30,7 +30,7 @@ public class CarTest {
             carEvent.setCarEventStep(new CarEventStep() {
                 @Override
                 protected Car setCarWithDriver() {
-                    TestDriver tester = new TestDriver("testman", Gender.MAN)
+                    TestDriver tester = new TestDriver("testman", Gender.MAN);
                     TestEventCar testEventCar = new TestEventCar();
                     testEventCar.inToDriver(tester);
                     return testEventCar;

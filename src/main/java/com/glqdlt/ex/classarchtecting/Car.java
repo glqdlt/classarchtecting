@@ -20,7 +20,7 @@ public abstract class Car {
 
     public abstract String drivingSound();
 
-    public Driver checkDriver() {
+    private Driver checkDriver() {
         return this.driver;
     }
 
