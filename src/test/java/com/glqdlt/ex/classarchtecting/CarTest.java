@@ -25,4 +25,13 @@ public class CarTest {
         CarEvent carEvent = new CarEvent(carEventStep);
         carEvent.run();
     }
+
+    @Test
+    public void carEventWithTestCar() {
+        TestDriver tester = new TestDriver("testman", Gender.MAN);
+        tester.greeting();
+        CarEventStep carEventStep = new CarEventStep(new TestEventCar(), tester);
+        CarEvent carEvent = new CarEvent(carEventStep);
+        carEvent.run();
+    }
 }
