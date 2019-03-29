@@ -6,9 +6,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
+ *
  * @author Jhun
  * 2019-03-29
  */
+//TODO 전략 패턴, 팩토리 패턴, 아답터 패턴 3가지를 구성해보자
 public class CarTest {
 
     @Test
