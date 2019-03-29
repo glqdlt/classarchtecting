@@ -3,28 +3,17 @@
 abstract Car{
     Driver driver
 
-    {abstract} driving()
+    {abstract} drivingSound()
     outDriver()
     inToDriver()
-    detailDriver()
+    checkDriver()
+    driving()
 }
 
 Class Sonata{
-    Driver driver
-
-    driving()
-    outDriver()
-    inToDriver()
-    detailDriver()
 }
 
 Class Ferrari{
-    Driver driver
-
-    driving()
-    outDriver()
-    inToDriver()
-    detailDriver()
 }
 
 
