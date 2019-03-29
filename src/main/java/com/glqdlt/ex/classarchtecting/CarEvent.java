@@ -6,14 +6,17 @@ package com.glqdlt.ex.classarchtecting;
  */
 public class CarEvent {
 
-    private CarEventStep carEventStep;
-
-    public CarEvent(CarEventStep carEventStep) {
+    public void setCarEventStep(CarEventStep carEventStep) {
         this.carEventStep = carEventStep;
     }
 
-    public void run() {
-        Car eventCar = carEventStep.getCar();
+    private CarEventStep carEventStep;
+
+    void run() {
+        if (this.carEventStep == null) {
+            this.carEventStep = new StandardCarEventStep();
+        }
+        Car eventCar = this.carEventStep.getCar();
         eventCar.driving();
     }
 }

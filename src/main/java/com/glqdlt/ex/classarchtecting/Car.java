@@ -14,7 +14,7 @@ public abstract class Car {
             throw new RuntimeException("Driver is empty");
         }
         String sound = drivingSound();
-        System.out.println(sound);
+        System.out.println(String.format("%s 과 함께~ %s", driver.getName(), sound));
         return sound;
     }
 

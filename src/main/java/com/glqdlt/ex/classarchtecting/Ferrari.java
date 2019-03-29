@@ -6,6 +6,6 @@ package com.glqdlt.ex.classarchtecting;
  */
 public final class Ferrari extends Car {
     public String drivingSound() {
-        return "뿌웨에에에에엥~~~@@@@";
+        return "페라뤼이이ㅣㅇ 뿌웨에에에에엥~~~@@@@";
     }
 }
